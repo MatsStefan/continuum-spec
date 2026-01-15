@@ -1,3 +1,5 @@
+![Continuum Banner](banner.png)
+
 [README.md](https://github.com/user-attachments/files/24630923/README.md)
 # Continuum: User-Owned Identity for the AI Era
 
