@@ -48,7 +48,7 @@ No re-explanation. Seamless continuity.
 
 ## Why I'm Sharing This
 
-I spent 3 months designing this system. I believe it needs to exist. I'm not technical enough to build it myself.
+I spent months designing this system. I believe it needs to exist. I'm not technical enough to build it myself.
 
 So I'm open-sourcing the entire specification. Consider it yours.
 
