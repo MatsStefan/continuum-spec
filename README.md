@@ -1,99 +1,137 @@
 ![Continuum Banner](banner.png)
 
-[README.md](https://github.com/user-attachments/files/24630923/README.md)
-# Continuum: User-Owned Identity for the AI Era
+# Continuum – User-Owned Memory for AI Tools
 
-**An open specification for cross-platform AI memory that users actually own.**
+**An open specification for portable, privacy-preserving AI context.**
 
-## What This Is
+Continuum describes a system that lets users carry identity and long-term context across AI tools (ChatGPT, Claude, Gemini, future models) without platform lock-in or loss of privacy.
 
-This is a complete technical and business specification for **Continuum** - a system that gives users persistent identity across every AI platform they use (ChatGPT, Claude, Gemini, etc.) without surrendering privacy or control.
+This repository contains the full specification.  
+I’m not building it. I’m publishing it so someone else can.
 
-I'm **not building this**. I'm sharing it publicly in hopes that someone will.
+---
 
-If you build this, I'll be your first user.
+## The Problem
 
-## What's Included
+AI tools are stateless across platforms.
 
-- **Full whitepaper** (47 pages): Technical architecture, business model, go-to-market strategy
-- **User scenarios**: Real-world use cases with before/after examples
-- **Competitive analysis**: How this differs from existing solutions
-- **Privacy-first design**: Three modes (ephemeral, curated, automatic)
-- **Implementation roadmap**: Phase 1-4 rollout plan
+You explain your work to one model, switch tools, and start over. This wastes time, fragments thinking, and prevents AI from functioning as a long-term collaborator.
 
-## Core Concept
+The limitation isn’t model quality – it’s missing user-owned memory.
 
-**The Problem:**
-You explain your project to ChatGPT. Switch to Claude. Have to re-explain everything. Waste 10-20 minutes per day on context repetition.
+---
 
-**The Solution:**
-A browser extension that gives every AI platform access to your project context - but only what you approve, fully encrypted, completely under your control.
+## The Proposal
 
-**Example:**
-```
-You (to ChatGPT): "I'm building a multi-tenant SaaS app..."
-[Continuum captures context]
+Continuum is a **local, encrypted context layer** that sits between the user and AI tools.
 
-Later (to Claude): "Optimize my database queries"
-Claude: "Right, for your multi-tenant SaaS app. Here's how..."
-```
+- Memory belongs to the user, not the platform
+- Context is shared selectively and explicitly
+- Works across providers and interfaces
+- Designed for long-term use (years, not sessions)
 
-No re-explanation. Seamless continuity.
+Think: identity and memory as infrastructure, not a chatbot feature.
 
-## Key Innovations
+---
 
-1. **User Sovereignty**: You own your encrypted data (zero-knowledge architecture)
-2. **Cross-Platform**: Works with ChatGPT, Claude, Gemini, any future AI
-3. **Three Privacy Modes**: Session (ephemeral), Curated (you approve), Archive (automatic)
-4. **Hierarchical Compression**: Designed for 10+ years of use without bloat
-5. **Open Protocol**: Not platform lock-in, but interoperable infrastructure
+## How It Works (Conceptually)
 
-## Why I'm Sharing This
+- User runs a local agent (e.g. browser extension)
+- Context is captured, compressed, and encrypted locally
+- Only approved slices are shared with AI tools
+- No provider has full visibility or ownership
 
-I spent months designing this system. I believe it needs to exist. I'm not technical enough to build it myself.
+Zero-knowledge by design.
 
-So I'm open-sourcing the entire specification. Consider it yours.
+---
+
+## Example
+
+ChatGPT: “I’m building a multi-tenant SaaS app…”
+[User promotes context to Continuum]
+
+Later, Claude:
+“Optimize my database queries.”
+
+Claude:
+“Given your multi-tenant SaaS architecture…”
+
+
+No re-explaining. No account coupling. No hidden state.
+
+---
+
+## What’s in This Repo
+
+- **47-page whitepaper**
+  - Architecture and data model
+  - Encryption and trust boundaries
+  - Memory compression strategy
+  - Business and incentive design
+
+- **Concrete user scenarios**
+- **Competitive analysis**
+- **Phased implementation roadmap**
+
+This is a specification, not a prototype.
+
+---
+
+## Design Principles
+
+- User-owned data
+- Explicit consent
+- Provider-agnostic
+- Open protocol
+- No dark patterns
+- No silent accumulation
+
+If memory is valuable, users should control it.
+
+---
+
+## Why Open
+
+This should not be a proprietary moat for a single AI company.
+
+If built correctly, it becomes shared infrastructure – like email, not Slack.
+
+So the entire spec is public under MIT.
+
+---
 
 ## License
 
-This work is licensed under the [MIT License](LICENSE). 
+MIT.  
+Build it, fork it, commercialize it.
 
-**TL;DR:** Use this however you want. Build it, sell it, modify it. Just keep the license notice.
-
-If you build this and it becomes valuable, crediting me would be appreciated but is not required.
-
-## Files
-
-- `Continuum-Whitepaper.pdf` - Full technical specification (47 pages)
-- `README.md` - This file
-
-## Contact
-
-**Author:** Mats Stefan Bengtsson
-
-If you're building this or want to discuss:
-- **Email:** [your email]
-- **Twitter/X:** [@your handle] (optional)
-
-I'm happy to advise on product/strategy if you're serious about building.
-
-## If You Build This
-
-Please let me know! I want to:
-1. Be your first user
-2. Help spread the word
-3. Provide feedback
-
-This is the AI memory system I wish existed. Make it real.
+Attribution appreciated, not required.
 
 ---
 
-**Built with this spec? Add your project here via pull request.**
+## Author
+
+Mats Stefan Bengtsson
+
+If you’re seriously considering implementing this and want input on design or trade-offs, I’m happy to discuss.
+
+---
+
+## If You Build It
+
+Please reach out to me: stefan.nu@gmail.com
+
+I want to be:
+1. Your first real user
+2. A critical early tester
+3. Someone who helps pressure-test assumptions
+
+---
 
 ## Projects Using This Spec
 
-- *Your project here*
+- Your project here
 
 ---
 
-**Last Updated:** January 2026
+Last updated: January 2026
