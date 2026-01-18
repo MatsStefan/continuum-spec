@@ -47,14 +47,12 @@ Zero-knowledge by design.
 
 ## Example
 
-ChatGPT: “I’m building a multi-tenant SaaS app…”
-[User promotes context to Continuum]
+You (ChatGPT): “I’m building a multi-tenant SaaS app…”
+[Continuum captures approved context]
 
-Later, Claude:
-“Optimize my database queries.”
+Later (Claude): “Help me optimize database queries.”
 
-Claude:
-“Given your multi-tenant SaaS architecture…”
+Claude: “Given your multi-tenant SaaS architecture, here’s what I’d change…”
 
 
 No re-explaining. No account coupling. No hidden state.
